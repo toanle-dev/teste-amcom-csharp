@@ -142,3 +142,4 @@
 /home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao5/obj/Debug/net8.0/Questao5.pdb
 /home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao5/obj/Debug/net8.0/Questao5.genruntimeconfig.cache
 /home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao5/obj/Debug/net8.0/ref/Questao5.dll
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao5/obj/Debug/net8.0/Questao5.sourcelink.json
