@@ -1,0 +1,6 @@
+@Questao5_HostAddress = http://localhost:5051
+
+GET {{Questao5_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

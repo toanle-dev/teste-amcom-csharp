@@ -1,0 +1,14 @@
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/bin/Debug/net8.0/Questao1
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/bin/Debug/net8.0/Questao1.deps.json
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/bin/Debug/net8.0/Questao1.runtimeconfig.json
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/bin/Debug/net8.0/Questao1.dll
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/bin/Debug/net8.0/Questao1.pdb
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/obj/Debug/net8.0/Questao1.GeneratedMSBuildEditorConfig.editorconfig
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/obj/Debug/net8.0/Questao1.AssemblyInfoInputs.cache
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/obj/Debug/net8.0/Questao1.AssemblyInfo.cs
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/obj/Debug/net8.0/Questao1.csproj.CoreCompileInputs.cache
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/obj/Debug/net8.0/Questao1.dll
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/obj/Debug/net8.0/refint/Questao1.dll
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/obj/Debug/net8.0/Questao1.pdb
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/obj/Debug/net8.0/Questao1.genruntimeconfig.cache
+/home/letoan/Projetos/toanle-dev/teste-amcom-csharp/Questao1/obj/Debug/net8.0/ref/Questao1.dll
