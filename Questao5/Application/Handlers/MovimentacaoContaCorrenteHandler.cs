@@ -24,13 +24,6 @@ public class MovimentacaoContaCorrenteHandler : IRequestHandler<MovimentacaoCont
 
     public async Task<MovimentacaoContaCorrenteResponse> Handle(MovimentacaoContaCorrenteRequest request, CancellationToken cancellationToken)
     {
-        // Verificar idempotência
-        var idempotencia = await VerificarIdempotencia(request.IdRequisicao);
-        if (idempotencia != null)
-        {
-            return JsonConvert.DeserializeObject<MovimentacaoContaCorrenteResponse>(idempotencia.Resultado)!;
-        }
-
         // Validações
         var conta = await ObterContaCorrente(request.IdContaCorrente);
 
@@ -45,6 +38,13 @@ public class MovimentacaoContaCorrenteHandler : IRequestHandler<MovimentacaoCont
 
         if (request.TipoMovimento != 'C' && request.TipoMovimento != 'D')
             throw new BusinessException("Tipo de movimento inválido", "INVALID_TYPE");
+
+        // Verificar idempotência
+        var idempotencia = await VerificarIdempotencia(request.IdRequisicao);
+        if (idempotencia != null)
+        {
+            return JsonConvert.DeserializeObject<MovimentacaoContaCorrenteResponse>(idempotencia.Resultado)!;
+        }
 
         // Persistir movimento
         var idMovimento = Guid.NewGuid().ToString();
