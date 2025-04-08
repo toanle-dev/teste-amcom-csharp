@@ -27,6 +27,9 @@ public class MovimentacaoContaCorrenteHandler : IRequestHandler<MovimentacaoCont
         // Validações
         var conta = await ObterContaCorrente(request.IdContaCorrente);
 
+        if (request.TipoMovimento != 'C' && request.TipoMovimento != 'D')
+            throw new BusinessException("Tipo de movimento inválido", "INVALID_TYPE");
+
         if (conta == null)
             throw new BusinessException("Conta corrente não encontrada", "INVALID_ACCOUNT");
 
@@ -35,9 +38,6 @@ public class MovimentacaoContaCorrenteHandler : IRequestHandler<MovimentacaoCont
 
         if (request.Valor <= 0)
             throw new BusinessException("Valor deve ser positivo", "INVALID_VALUE");
-
-        if (request.TipoMovimento != 'C' && request.TipoMovimento != 'D')
-            throw new BusinessException("Tipo de movimento inválido", "INVALID_TYPE");
 
         // Verificar idempotência
         var idempotencia = await VerificarIdempotencia(request.IdRequisicao);
